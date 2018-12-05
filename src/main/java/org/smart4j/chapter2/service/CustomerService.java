@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import org.smart4j.chapter2.helper.DatabaseHelper;
 import org.smart4j.chapter2.model.Customer;
 
-import java.sql.*;
 import java.util.List;
 import java.util.Map;
 
