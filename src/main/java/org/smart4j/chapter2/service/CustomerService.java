@@ -18,22 +18,19 @@ public class CustomerService {
     }
 
     public Customer getCustomer(long id){
-        // TODO: 2018/11/29
-        return null;
+        String sql = "select * from customer";
+        return DatabaseHelper.queryEntity(Customer.class, sql, id);
     }
 
     public boolean createCustomer(Map<String, Object> fieldMap){
-        // TODO: 2018/11/29
-        return false;
+        return DatabaseHelper.insertEntity(Customer.class, fieldMap);
     }
 
     public boolean updateCustomer(long id, Map<String, Object> fieldMap){
-        // TODO: 2018/11/29
-        return false;
+        return DatabaseHelper.updateEntity(Customer.class, id, fieldMap);
     }
 
     public boolean deleteCustomer(long id){
-        // TODO: 2018/11/29
-        return false;
+        return DatabaseHelper.deleteEntity(Customer.class, id);
     }
 }
